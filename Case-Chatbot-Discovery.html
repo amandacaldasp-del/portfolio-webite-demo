@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When support reveals product gaps — Amanda Caldas</title>
+<meta name="description" content="A self-initiated discovery that turned chatbot conversations into product insights.">
+<script>
+  try { if (localStorage.getItem('ac-lang') === 'pt') document.documentElement.lang = 'pt-BR'; } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Amanda Caldas</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#work"><span class="en">Work</span><span class="pt">Trabalhos</span></a>
+      <a href="About.html"><span class="en">About</span><span class="pt">Sobre</span></a>
+      <a href="index.html#contact"><span class="en">Contact</span><span class="pt">Contato</span></a>
+      <span class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en">EN</button>
+        <button type="button" data-set-lang="pt">PT</button>
+      </span>
+    </nav>
+  </header>
+
+  <article class="case">
+
+    <div class="en">
+      <p class="eyebrow">Case 03 · Product discovery · Caju</p>
+      <h1>When support reveals product gaps</h1>
+      <p class="case-lead">A self-initiated discovery that turned chatbot conversations into product insights</p>
+
+      <div class="case-meta">
+        <div><p class="meta-label">Company</p><p>Caju · website chatbot</p></div>
+        <div><p class="meta-label">Role</p><p>Self-initiated discovery · research, IA and conversation design</p></div>
+        <div><p class="meta-label">Partners</p><p>Product Manager for the website, CX team</p></div>
+      </div>
+
+      <p>While accessing Caju's website for another project, I noticed that the site chatbot offered no self-service flows for employees or companies, despite recurring access-related complaints in NPS responses and sales conversations.</p>
+      <p>I brought the opportunity to my leadership and proposed a discovery to understand whether the chatbot could become a useful support channel.</p>
+      <p>Over Q1 2024, I designed and ran a three-phase discovery combining qualitative analysis, quantitative validation, and a live self-service pilot.</p>
+
+      <h2>My role</h2>
+      <p class="meta-label">I owned:</p>
+      <ul class="dash-list">
+        <li>Research plan and hypotheses</li>
+        <li>Qualitative analysis of chatbot and CX inputs</li>
+        <li>NPS analysis and quantitative validation</li>
+        <li>Information architecture and decision-tree design</li>
+        <li>Conversation flows and UX writing</li>
+        <li>Pilot analysis and synthesis</li>
+        <li>Recommendations for chatbot, access, and support teams</li>
+      </ul>
+      <p>I partnered with the Product Manager responsible for the website, who implemented the pilot based on the experience and decision tree I designed.</p>
+
+      <h2>Find the dominant problem</h2>
+      <p>I analyzed open-ended chatbot inputs from January 18–28, 2024, looking for recurring questions that weren't represented in the existing decision tree. I also partnered with CX to understand the access issues reaching human support.</p>
+      <p>Access emerged as the dominant theme.</p>
+      <p>Quantitative analysis from January 29–February 19 confirmed that access-related issues represented more than 50% of reported problems for both employees and companies.</p>
+      <p>That gave us a focused hypothesis to test: could self-service help users recover access without human intervention?</p>
+
+      <h2>Test the smallest useful experience</h2>
+      <p>Rather than building a full AI chatbot, I designed a decision-tree pilot focused on access recovery.</p>
+      <p>The experience separated users into Companies and Employees, reflecting their different account structures and access logic.</p>
+      <p>The pilot ran from March 25 to April 18, 2024.</p>
+
+      <div class="stats">
+        <div><p class="stat-value">2,943</p><p>Chatbot entries</p></div>
+        <div><p class="stat-value">57%</p><p>Employee Help</p></div>
+        <div><p class="stat-value">18%</p><p>Company/HR Help</p></div>
+        <div><p class="stat-value">46%</p><p>Abandoned before completion</p></div>
+      </div>
+
+      <p>The volume validated demand for the channel, but the flow exposed a deeper problem: Caju and users were organizing access problems differently.</p>
+
+      <figure>
+        <img src="assets/chatbot-decision-tree.png" alt="Decision tree: Companies and Employees access problem paths">
+      </figure>
+
+      <h2>Find the mental-model mismatch</h2>
+      <p>I redesigned the architecture around blocked actions rather than internal problem categories, creating a framework that also informed the broader FAQ and access experience.</p>
+      <figure>
+        <img src="assets/chatbot-mental-models.png" alt="Caju's model versus the user's mental model, and the recommended FAQ taxonomy">
+      </figure>
+
+      <h2>Find the product problem behind the support request</h2>
+      <p>The pilot surfaced a particularly important pattern among company users:</p>
+
+      <div class="metric">
+        <p class="metric-value">86%</p>
+        <p>of users encountering a specific access issue reported that the person who owned the company's login credentials no longer worked there.</p>
+      </div>
+
+      <p>This exposed an account ownership and offboarding problem that CX could see through support tickets but Product did not have the same aggregated visibility into.</p>
+      <p>I translated these findings into recommendations for the chatbot, FAQ, support infrastructure, and teams responsible for access.</p>
+      <p>The FAQ later gained a dedicated team, and the access-problem architecture from the discovery became a foundation for restructuring that experience. Caju also subsequently expanded AI expertise across Sales, Support, and Design.</p>
+
+      <h2>Detect an unexpected signal</h2>
+      <p>I kept the pilot live beyond the initial analysis window.</p>
+      <p>An unusual spike in conversations around a specific access issue appeared roughly two days before CX reported the issue through the cross-functional Slack channel.</p>
+      <p>The sample wasn't sufficient to establish a monitoring system, but it suggested that conversational data could also reveal emerging product problems.</p>
+
+      <h2>Impact</h2>
+      <div class="stats">
+        <div><p class="stat-value">2,943</p><p>Chatbot entries during four weeks</p></div>
+        <div><p class="stat-value">&gt;50%</p><p>of reported issues were access-related across both user segments</p></div>
+        <div><p class="stat-value">57% / 18%</p><p>Employee vs. Company/HR flow traffic</p></div>
+        <div><p class="stat-value">46%</p><p>Flow abandonment, identifying an optimization opportunity</p></div>
+        <div><p class="stat-value">86%</p><p>of users in one company-access issue identified former employees retaining account ownership</p></div>
+        <div><p class="stat-value">~2 days</p><p>Between an unusual chatbot activity spike and the corresponding CX report</p></div>
+      </div>
+
+      <h2>What changed</h2>
+      <p>The discovery surfaced gaps in access, account ownership, information architecture, FAQ structure, and support operations.</p>
+      <p>The findings became one input into subsequent decisions across chatbot, FAQ, support, and access teams.</p>
+      <p>The project showed how conversational data can connect user language, behavior, support signals, and product decisions — expanding the role of Content Design from conversation flows into product discovery.</p>
+    </div>
+
+    <div class="pt">
+      <p class="eyebrow">Case 03 · Discovery de produto · Caju</p>
+      <h1>Quando tickets de suporte revelam gaps de produto</h1>
+      <p class="case-lead">Uma discovery que transformou conversas do chatbot em insights de produto</p>
+
+      <div class="case-meta">
+        <div><p class="meta-label">Empresa</p><p>Caju · chatbot do site</p></div>
+        <div><p class="meta-label">Papel</p><p>Discovery iniciado por mim · pesquisa e design conversacional</p></div>
+        <div><p class="meta-label">Parceiros</p><p>Product Manager responsável pelo site, time de CX</p></div>
+      </div>
+
+      <p>Enquanto acessava o site da Caju para outro projeto, percebi que o chatbot não oferecia nenhum fluxo de autoatendimento para pessoas colaboradoras ou empresas, apesar de reclamações recorrentes sobre problemas de acesso aparecerem nas respostas de NPS e nas conversas de vendas.</p>
+      <p>Levei a oportunidade para a liderança e propus uma discovery para entender se o chatbot poderia se tornar um canal de suporte realmente útil.</p>
+      <p>Ao longo do primeiro trimestre de 2024, planejei e conduzi uma discovery em três fases, combinando análise qualitativa, validação quantitativa e um piloto de autoatendimento em produção.</p>
+
+      <h2>Meu papel</h2>
+      <p class="meta-label">Fui responsável por:</p>
+      <ul class="dash-list">
+        <li>Plano de pesquisa e hipóteses</li>
+        <li>Análise qualitativa das conversas do chatbot e dos dados de CX</li>
+        <li>Análise de NPS e validação quantitativa</li>
+        <li>Arquitetura da informação e desenho da árvore de decisão</li>
+        <li>Fluxos conversacionais e textos de UX</li>
+        <li>Análise e síntese dos resultados do piloto</li>
+        <li>Recomendações para chatbot, acesso e times de suporte</li>
+      </ul>
+      <p>Trabalhei em parceria com o Product Manager responsável pelo site, que implementou o piloto a partir da experiência e da árvore de decisão que desenhei.</p>
+
+      <h2>Encontrando o principal problema</h2>
+      <p>Analisei as entradas abertas do chatbot entre 18 e 28 de janeiro de 2024, buscando perguntas recorrentes que não estavam representadas na árvore de decisão existente. Também trabalhei com o time de CX para entender quais problemas de acesso chegavam ao suporte humano.</p>
+      <p>Acesso apareceu como o principal tema.</p>
+      <p>A análise quantitativa realizada entre 29 de janeiro e 19 de fevereiro confirmou que problemas relacionados a acesso representavam mais de 50% dos problemas reportados, tanto entre pessoas colaboradoras quanto entre empresas.</p>
+      <p>Isso nos deu uma hipótese objetiva para testar: o autoatendimento poderia ajudar as pessoas a recuperar o acesso sem precisar de intervenção humana?</p>
+
+      <h2>Testando a menor experiência útil</h2>
+      <p>Em vez de construir um chatbot completo com IA, desenhei um piloto baseado em uma árvore de decisão, focado na recuperação de acesso.</p>
+      <p>A experiência separava as pessoas entre Empresas e Colaboradores, refletindo as diferentes estruturas de conta e regras de acesso de cada público.</p>
+      <p>O piloto ficou no ar de 25 de março a 18 de abril de 2024.</p>
+
+      <div class="stats">
+        <div><p class="stat-value">2.943</p><p>Entradas no chatbot</p></div>
+        <div><p class="stat-value">57%</p><p>Fluxo de ajuda para colaboradores</p></div>
+        <div><p class="stat-value">18%</p><p>Fluxo de ajuda para empresas/RH</p></div>
+        <div><p class="stat-value">46%</p><p>Abandonaram o fluxo antes de concluí-lo</p></div>
+      </div>
+
+      <p>O volume confirmou a demanda pelo canal, mas o fluxo revelou um problema mais profundo: a Caju e as pessoas usuárias estavam organizando os problemas de acesso de formas diferentes.</p>
+
+      <figure>
+        <img src="assets/chatbot-decision-tree.png" alt="Árvore de decisão: caminhos de problemas de acesso para Empresas e Colaboradores">
+      </figure>
+
+      <h2>Identificando o desencontro de modelos mentais</h2>
+      <p>Redesenhei a arquitetura a partir das ações que estavam bloqueadas, em vez de partir das categorias internas dos problemas.</p>
+      <p>O resultado foi um framework que também passou a orientar a estrutura da FAQ e da experiência de acesso.</p>
+      <figure>
+        <img src="assets/chatbot-mental-models.png" alt="Modelo da Caju versus o modelo mental das pessoas usuárias, e a taxonomia recomendada para a FAQ">
+      </figure>
+
+      <h2>Encontrando o problema de produto por trás da solicitação de suporte</h2>
+      <p>O piloto revelou um padrão especialmente importante entre usuários de empresas:</p>
+
+      <div class="metric">
+        <p class="metric-value">86%</p>
+        <p>das pessoas que encontraram um problema específico de acesso relataram que a pessoa responsável pelas credenciais de login da empresa não trabalhava mais lá.</p>
+      </div>
+
+      <p>Isso revelou um problema de gestão de acesso e o processo de desligamento de colaboradores. Apesar do time de CX conseguir identificar esse problema por meio dos chamados de suporte, o time de Produto não tinha essa mesma visibilidade.</p>
+      <p>Transformei esses achados em recomendações para o chatbot, FAQ, a estrutura de suporte e os times responsáveis pela gestão de acesso.</p>
+      <p>Posteriormente, a FAQ passou a contar com um time dedicado, e a arquitetura de problemas de acesso criada durante a discovery serviu como base para reestruturar essa experiência.</p>
+      <p>A Caju também ampliou posteriormente a atuação de especialistas em IA entre os times de Vendas, Suporte e Design.</p>
+
+      <h2>Comportamentos não esperados</h2>
+      <p>Mantive o piloto no ar além do período inicial de análise.</p>
+      <p>Um aumento incomum nas conversas sobre um problema específico de acesso apareceu aproximadamente dois dias antes de o time de CX reportar o mesmo problema no canal de Slack usado pela equipe para compartilhar sinais entre áreas.</p>
+      <p>A amostra não era suficiente para estabelecer um sistema de monitoramento, mas indicou que dados conversacionais também poderiam ajudar a identificar problemas emergentes de produto.</p>
+
+      <h2>Impacto</h2>
+      <div class="stats">
+        <div><p class="stat-value">2.943</p><p>Entradas no chatbot durante quatro semanas</p></div>
+        <div><p class="stat-value">&gt;50%</p><p>Dos problemas reportados eram relacionados a acesso nos dois públicos</p></div>
+        <div><p class="stat-value">57% / 18%</p><p>Tráfego nos fluxos de Colaboradores vs. Empresas/RH</p></div>
+        <div><p class="stat-value">46%</p><p>Abandono do fluxo, identificando uma oportunidade de otimização</p></div>
+        <div><p class="stat-value">86%</p><p>Das empresas com problemas de acesso identificaram ex-colaboradores como responsáveis pela login</p></div>
+        <div><p class="stat-value">~2 dias</p><p>Intervalo entre o aumento incomum na atividade do chatbot e o reporte correspondente pelo time de CX</p></div>
+      </div>
+
+      <h2>O que mudou</h2>
+      <p>O discovery revelou gaps em acesso, propriedade de contas, arquitetura da informação, estrutura da FAQ e operações de suporte.</p>
+      <p>Os achados passaram a fazer parte das decisões seguintes envolvendo chatbot, FAQ, suporte e acesso.</p>
+      <p>Este projeto mostrou como dados conversacionais podem conectar linguagem das pessoas usuárias, comportamento, suporte e decisões de produto — ampliando o papel de Content Design de fluxos conversacionais para também contribuir com discovery de produto.</p>
+    </div>
+
+    <nav class="case-nav" aria-label="Cases">
+      <a href="Case-Event-Ecosystem.html"><span class="en">← Previous</span><span class="pt">← Anterior</span></a>
+      <a href="index.html#work"><span class="en">All cases</span><span class="pt">Todos os casos</span></a>
+      <span class="disabled"><span class="en">Next →</span><span class="pt">Próximo →</span></span>
+    </nav>
+  </article>
+
+  <footer class="case-footer">
+    <a class="contact-email" href="mailto:amandacaldas.p@gmail.com">amandacaldas.p@gmail.com</a>
+    <span class="footer-accent"><span class="en">thanks for reading this far</span><span class="pt">obrigada por ler até aqui</span></span>
+  </footer>
+
+</div>
+<script src="lang.js"></script>
+</body>
+</html>
